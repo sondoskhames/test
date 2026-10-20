@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Astroship</title>
+    <!-- تم تعديل المسار هنا ليقرأ من ملف output.css المباشر المتواجد معه في مجلد dist -->
+    <link href="output.css" rel="stylesheet">
+    <!-- استيراد خط Inter من قوقل -->
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body class="bg-white text-slate-800 antialiased" style="font-family: 'Inter', sans-serif;">
+
+    <!-- حاوية الصفحة الكبيرة وضبط مسافات الأمان الجانبية -->
+    <div class="max-w-7xl mx-auto px-6 sm:px-8">
+        
+       <!-- ==========================================
+   1. شريط التنقل العلوي (Navbar) مضافًا إليه الـ Dropdown المصلح
+   ========================================== -->
+<nav class="flex flex-col lg:flex-row justify-between items-center py-6 gap-4 lg:gap-0 relative z-50">
+    <!-- الشعار اللوجو جهة اليسار -->
+    <div class="flex items-center justify-between w-full lg:w-auto">
+        <a href="index.html" class="text-xl font-bold text-slate-900 tracking-tight">
+            Astro<span class="text-slate-500 font-medium">ship</span>
+        </a>
+    </div>
+
+    <!-- روابط القائمة في المنتصف -->
+    <ul class="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-[15px] font-medium text-slate-600 list-none">
+        
+        <!-- القائمة المنسدلة لـ Features التفاعلية بالـ Hover -->
+        <li class="relative group cursor-pointer py-2">
+            <button class="flex items-center gap-1 text-slate-600 hover:text-slate-900 font-medium focus:outline-none">
+                <span>Features</span>
+                <!-- تم إصلاح مسار xmlns التالف للسهم هنا -->
+                <svg xmlns="http://w3.org" class="w-3 h-3 text-slate-400 group-hover:rotate-180 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+
+            <!-- صندوق الخيارات المنسدلة الأربعة البيضاء المطابقة للصورة -->
+            <div class="absolute left-0 top-full mt-1 w-52 bg-white border border-slate-100 rounded-lg shadow-xl hidden group-hover:block transition-all duration-200 z-50">
+                <ul class="py-2 flex flex-col list-none">
+                    <li>
+                        <a href="#" class="block px-5 py-2.5 text-[14px] text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                            Action
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-5 py-2.5 text-[14px] text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                            Another action
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block px-5 py-2.5 text-[14px] text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                            Dropdown Submenu
+                        </a>
+                    </li>
+                    <li class="border-t border-slate-100 mt-1 pt-1">
+                        <a href="#" class="block px-5 py-2.5 text-[14px] text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                            404 Page
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <!-- روابط توجيه الصفحات المرتبطة بالمشروع -->
+        <li><a href="pricing.html" class="hover:text-slate-900">Pricing</a></li>
+        <li><a href="about.html" class="hover:text-slate-900">About</a></li>
+        <li><a href="blog.html" class="hover:text-slate-900">Blog</a></li>
+        <li><a href="contact.html" class="hover:text-slate-900">Contact</a></li>
+    </ul>
+
+    <!-- أزرار تسجيل الدخول جهة اليمين -->
+    <div class="flex items-center gap-4">
+        <a href="#" class="text-[15px] font-medium text-slate-600 hover:text-slate-900">Log in</a>
+        <a href="#" class="bg-black text-white px-4 py-2 rounded-md text-[15px] font-medium hover:bg-slate-800 transition-colors">
+            Sign up
+        </a>
+    </div>
+</nav>
+
+        <!-- ==========================================
+           2. قسم العناوين والتعريف (Header Area)
+           ========================================== -->
+        <section class="py-16 text-center">
+            <h1 class="text-5xl md:text-6xl font-black text-slate-900 tracking-tight mb-4">
+                Contact
+            </h1>
+            <p class="text-lg md:text-xl text-slate-500 max-w-xl mx-auto font-medium">
+                We are here to help.
+            </p>
+        </section>
+
+        <!-- ==========================================
+           3. محتوى الاستمارة وبيانات الاتصال الجانبية
+           ========================================== -->
+        <div class="grid md:grid-cols-2 gap-12 lg:gap-20 max-w-5xl mx-auto my-12 items-start">
+            
+            <!-- الجانب الأيسر: نصوص وبيانات الاتصال -->
+            <div class="text-left">
+                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight mb-4">
+                    Contact Astroship
+                </h2>
+                <p class="text-slate-500 leading-relaxed text-[15px] mb-8">
+                    Have something to say? We are here to help. Fill up the form or send email or call phone.
+                </p>
+                
+                <!-- أيقونات البيانات الوصفية -->
+                <div class="flex flex-col gap-4 text-[15px] text-slate-600">
+                    <div class="flex items-center gap-3">
+                        <span class="text-slate-400 text-lg">📍</span>
+                        <span>1734 Sanfransico, CA 93063</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-slate-400 text-lg">✉</span>
+                        <a href="mailto:hello@astroshipstarter.com" class="hover:text-black transition-colors">hello@astroshipstarter.com</a>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-slate-400 text-lg">📞</span>
+                        <a href="tel:+19874587899" class="hover:text-black transition-colors">+1 (987) 4587 899</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- الجانب الأيمن: نموذج الإرسال والاستمارة (Form Container) -->
+            <div>
+                <form class="flex flex-col gap-5" action="#" method="POST">
+                    
+                    <!-- حقل الاسم -->
+                    <div>
+                        <input type="text" placeholder="Full Name" required
+                               class="w-full px-4 py-3 rounded border border-slate-300 text-slate-800 placeholder-slate-400 outline-none focus:border-slate-500 transition-colors text-[15px]">
+                    </div>
+
+                    <!-- حقل البريد الإلكتروني -->
+                    <div>
+                        <input type="email" placeholder="Email Address" required
+                               class="w-full px-4 py-3 rounded border border-slate-300 text-slate-800 placeholder-slate-400 outline-none focus:border-slate-500 transition-colors text-[15px]">
+                    </div>
+
+                    <!-- صندوق الرسالة الطويل -->
+                    <div>
+                        <textarea placeholder="Your Message" rows="5" required
+                                  class="w-full px-4 py-3 rounded border border-slate-300 text-slate-800 placeholder-slate-400 outline-none focus:border-slate-500 transition-colors resize-none text-[15px]"></textarea>
+                    </div>
+
+                    <!-- زر إرسال الرسالة الأسود العريض السفلي -->
+                    <div>
+                        <button type="submit" 
+                                class="w-full bg-black text-white font-semibold text-sm py-4 rounded hover:bg-slate-800 transition-colors tracking-wide shadow">
+                            Send Message
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+        <!-- ==========================================
+           4. تذييل الصفحة النهائي (Footer)
+           ========================================== -->
+        <footer class="py-12 border-t border-slate-100 text-center mt-24">
+            <p class="text-[14px] text-slate-500 font-normal tracking-tight mb-2">
+                Copyright © 2026 Astroship. All rights reserved.
+            </p>
+            <p class="text-[13px] text-slate-400 font-normal">
+                Made by <a href="#" class="text-slate-600 font-semibold hover:text-black transition-colors">Web3Templates</a> • Distributed by <a href="#" class="text-slate-600 font-semibold hover:text-black transition-colors">ThemeWagon</a>
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
